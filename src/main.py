@@ -10,7 +10,8 @@ def solve(PUZZLE,WORDS,reverse=False):
 				ey=sy+dr[1]
 				d=dr
 				break
-		if (d==None):return data
+		if (d is None):
+			return data
 		for i in range(2,len(w),1):
 			ex+=dr[0]
 			ey+=dr[1]
